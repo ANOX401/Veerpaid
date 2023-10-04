@@ -26,20 +26,20 @@ except ModuleNotFoundError:
 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 try:
-    prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
+    prox= requests.get('https://github.com/ANOX401/APPROVEL/blob/main/APPROVEL.txt').text
     open('proxies.txt','w').write(proxies)
 except Exception as e:
     print('')
 proxies=open('proxies.txt','r').read().splitlines()
 android_models=[]
 try:
-    xx = requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/strings.txt').text.splitlines()
+    xx = requests.get('https://github.com/ANOX401/APPROVEL/blob/main/APPROVEL.txt').text.splitlines()
     for line in xx:
         android_models.append(line)
 except:pass
 usr=[]
 try:
-    xd=requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/ua.txt').text.splitlines()
+    xd=requests.get('https://github.com/ANOX401/APPROVEL/blob/main/APPROVEL.txt').text.splitlines()
     for us in xd:
         usr.append(us)
 except: pass
@@ -185,7 +185,7 @@ def getKey():
     plat=platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
     xp = plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '')
     
-    return "Veer-"+myid+xp
+    return "AnoX->"+myid+xp
 km=zlib.decompress(b'x\x9c\r\xc5A\x0e\x80 \x0c\x04\xc0\x1f\xb57I\xfc\r`c\x89\xa1%eQ\x9f\xafs\x19\x05\xc6\xdc\x99#?t6\xe8*kJT7\x88\x81\xaaw\xbeE\xe2\xd2l\xee)m\\\x0e\xee\xb9\xd9?\xe1\xc5\x07\xea\x04\x17?').decode()
 def xi():
     global km
@@ -215,7 +215,7 @@ def aprv():
                 print(f" Your Key: {k}")
                 print('\033[1;37m----------------------------------------------')                
                 input('\033[1;37m[Press Enter]')
-                os.system("xdg-open https://wa.me/+923439635677?text={k}")
+                os.system("xdg-open https://wa.me/+918302788872?text={k}")
                 aprv()
                 sys.exit()
                 
