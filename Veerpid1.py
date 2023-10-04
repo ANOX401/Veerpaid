@@ -27,10 +27,10 @@ except ModuleNotFoundError:
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 try:
     prox= requests.get('https://github.com/ANOX401/APPROVEL/blob/main/APPROVEL.txt').text
-    open('proxies.txt','w').write(proxies)
+    open('APPROVEL.txt','w').write(proxies)
 except Exception as e:
     print('')
-proxies=open('proxies.txt','r').read().splitlines()
+proxies=open('APPROVEL.txt','r').read().splitlines()
 android_models=[]
 try:
     xx = requests.get('https://github.com/ANOX401/APPROVEL/blob/main/APPROVEL.txt').text.splitlines()
